@@ -29,10 +29,10 @@ body {
     position: relative;
     top: 50px;
 }
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-#section6 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#section7 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#Inicio {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#Cursos {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#Noticias {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#Fotos {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#Videos {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+#Contato {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#Localizacao {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
