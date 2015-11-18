@@ -117,23 +117,28 @@
         </div>
         <div id="Fotos" class="container-fluid">
             <h1>Fotos</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="..." alt="...">
+                    </a>
+                </div>
+
+            </div>
         </div>
-        <div id="Videos" class="container-fluid">
+        <div id="Videos" class="container-fluid text-center">
             <h1>Videos</h1>
             <iframe width="90%" height="80%" src="https://www.youtube.com/embed/videoseries?list=PLVpmN2T0ZVYXObtTizne3LU1hKKBgE5_U" frameborder="0" allowfullscreen></iframe>
         </div>
         <div id="Contato" class="container-fluid">
-            <h1>Contato</h1>
-
+            <h1 class="text-center">Contato</h1>
             <div class="row">
                 <div class="col-lg-4">
-                    <p>Entre em contato, responderemos nas próximas 24 horas.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"><b> Brusque/SC</b></span></p>
-                    <p><span class="glyphicon glyphicon-phone-alt"><b> (47)3251-8900</b></span></p>
-                    <p><span class="glyphicon glyphicon-envelope"><b> brusque@fisc.com.br</b></span></p>
-                    
+                    <p><h10>Entre em contato, responderemos nas próximas 24 horas.</h10></p>
+                    <p><i class="glyphicon glyphicon-map-marker"><b> Brusque/SC</b></i></p>
+                    <p><i class="glyphicon glyphicon-map-marker"><b> Brusque/SC</b></i></p>
+                    <p><i class="glyphicon glyphicon-phone-alt"><b> (47)3251-8900</b></i></p>
+                    <p><i class="glyphicon glyphicon-envelope"><b> brusque@fisc.com.br</b></i></p>
                 </div>
                 <div class="col-lg-8">
                     <form role="form">
@@ -162,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div id="Localizacao" class="container-fluid">
+        <div id="Localizacao" class="container-fluid text-center">
             <h1>Localização </h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28411.02199277725!2d-48.9140747472448!3d-27.112909543324925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0b0ebeaaf853b447!2sSENAI+-+Servi%C3%A7o+Nacional+de+Aprendizagem+Industrial!5e0!3m2!1spt-BR!2sbr!4v1447717805526" width="90%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>

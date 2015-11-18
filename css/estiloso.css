@@ -34,5 +34,13 @@ body {
 #Noticias {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
 #Fotos {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
 #Videos {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-#Contato {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#Contato {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
 #Localizacao {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+
+#Contato .glyphicon{
+    color: darkslategrey;
+}
+
+#Contato h1,#Contato h10{
+    color: darkslategrey;
+}
