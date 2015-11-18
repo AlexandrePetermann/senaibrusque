@@ -134,8 +134,7 @@
             <h1 class="text-center">Contato</h1>
             <div class="row">
                 <div class="col-lg-4">
-                    <p><h10>Entre em contato, responderemos nas próximas 24 horas.</h10></p>
-                    <p><i class="glyphicon glyphicon-map-marker"><b> Brusque/SC</b></i></p>
+                    <p>Entre em contato, responderemos nas próximas 24 horas.</p>
                     <p><i class="glyphicon glyphicon-map-marker"><b> Brusque/SC</b></i></p>
                     <p><i class="glyphicon glyphicon-phone-alt"><b> (47)3251-8900</b></i></p>
                     <p><i class="glyphicon glyphicon-envelope"><b> brusque@fisc.com.br</b></i></p>
