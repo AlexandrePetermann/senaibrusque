@@ -29,18 +29,18 @@ body {
     position: relative;
     top: 50px;
 }
-#Inicio {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#Cursos {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#Noticias {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#Fotos {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#Videos {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-#Contato {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
-#Localizacao {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#Inicio {padding-top:50px;height:700px;color: #fff; background-color: #1E88E5;}
+#Cursos {padding-top:50px;height:700px;color: #fff; background-color: #673ab7;}
+#Noticias {padding-top:50px;height:700px;color: #fff; background-color: #ff9800;}
+#Fotos {padding-top:50px;height:700px;color: #fff; background-color: #00bcd4;}
+#Videos {padding-top:50px;height:700px;color: #fff; background-color: #009688;}
+#Contato {padding-top:50px;height:auto;color: #fff; background-color: whitesmoke;}
+#Localizacao {padding-top:50px;height:700px;color: #fff; background-color: #00bcd4;}
 
 #Contato .glyphicon{
     color: darkslategrey;
 }
 
-#Contato h1,#Contato p{
+h1,#Contato p{
     color: darkslategrey;
 }

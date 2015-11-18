@@ -120,11 +120,66 @@
             <div class="row">
                 <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
-                        <img src="..." alt="...">
+                        <img src="http://placehold.it/350x120">
                     </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>                    
                 </div>
-
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>                    
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>                    
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>
+                    <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/350x120">
+                    </a>                    
+                </div>
             </div>
+            <nav> 
+                <ul  class= "pagination" > 
+                    <li> 
+                        <a  href= "#"  aria-label= "Anterior" > 
+                            <span  aria-hidden= "true" > « </span> 
+                        </a> 
+                    </li> 
+                    <li><a  href= "#" > 1 </a></li> 
+                    <li><a  href= "#" > 2 </a></li> 
+                    <li><a  href= "#" > 3 </a></li> 
+                    <li> 
+                        <a  href= "#"  aria-label= "Proxima" > 
+                            <span  aria-hidden= "true" > » </span> 
+                        </a> 
+                    </li> 
+                </ul> 
+            </nav>
         </div>
         <div id="Videos" class="container-fluid text-center">
             <h1>Videos</h1>
@@ -146,13 +201,13 @@
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-user"></span>
                                 </span>
-                                <input  type= "text"  class= "form-control"  placeholder= "Nome"  aria-describedby= "basic-addon1" >                        
+                                <input  type= "text"  class= "form-control"  placeholder= "Nome" >                        
                             </div>
                             <div  class= "input-group" > 
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input  type= "email"  class= "form-control"  placeholder= "E-mail"  aria-describedby= "basic-addon1" >                        
+                                <input  type= "email"  class= "form-control"  placeholder= "E-mail">                        
                             </div>
                         </div>
                         <div  class= "input-group"> 
