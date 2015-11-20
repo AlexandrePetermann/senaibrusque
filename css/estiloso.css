@@ -44,3 +44,7 @@ body {
 h1,#Contato p{
     color: darkslategrey;
 }
+
+#contactForm .h4,#contactForm .h3{
+    color: darkslategrey;
+}
