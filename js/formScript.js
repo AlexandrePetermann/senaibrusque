@@ -4,11 +4,15 @@
  */
 
 
-$("#contactForm").submit(function (event) {
-    // cancela o envio padrão
-    event.preventDefault();
-    // chama uma função que fará o envio do formulario
-    submitForm();
+$("#contactForm").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        formError();
+        submitMSG(false, "Por favor preencha os dados de forma correta!");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
 });
 
 function submitForm() {
@@ -28,6 +32,24 @@ function submitForm() {
         }
     });
 }
+
 function formSuccess() {
-    $("#msgSubmit").removeClass("hidden");
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Mensagem Sucesso!");
+}
+
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+        $(this).removeClass();
+    });
+}
+
+function submitMSG(valid, msg) {
+    var msgClasses;
+    if (valid) {
+        msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        msgClasses = "h3 text-center flash animated text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
