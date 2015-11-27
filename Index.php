@@ -15,15 +15,15 @@
         <header class="jumbotron" id="topo" >
             <h1>SENAI/SC Brusque</h1>
             <p>Olá Bootstrap</p>
-            <form role="form">
+            <form role="form" action="cadastroNewsletter.php" method="post">
                 <div class="form-inline">
                     <div class="input-group input-group-sm">                            
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-envelope"></span>
                         </span>
-                        <input class="form-control" type="email" placeholder="seunome@provedor.com" id="email" size="50">
+                        <input class="form-control" type="email" placeholder="seunome@provedor.com" id="email" size="50" name="emailNewsletter">
                     </div>
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <button type="submit" class="btn btn-success" name="cadastraEmail">Cadastrar</button>
                 </div>
             </form>
         </header>
