@@ -3,7 +3,9 @@
  * http://webdesign.tutsplus.com/tutorials/building-a-bootstrap-contact-form-using-php-and-ajax--cms-23068
  */
 
-
+/*
+ 
+ 
 $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         formError();
@@ -53,3 +55,5 @@ function submitMSG(valid, msg) {
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
+
+*/

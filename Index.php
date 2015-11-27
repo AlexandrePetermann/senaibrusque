@@ -186,6 +186,6 @@
         <script src="js/validator.js"></script>
         <script src="js/meuscript.js"></script>
         <script src="js/contato.js"></script>
-        <script src="js/newsletter.js"></script>
+        <script src="js/newsletter.js"></script>        
     </body>
 </html>

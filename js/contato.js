@@ -4,7 +4,7 @@
  */
 
 
-$("#contactForm").validator().on("submit", function (event) {
+$("#contatoForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Por favor preencha os dados de forma correta!");
@@ -23,7 +23,7 @@ function submitForm() {
 
     $.ajax({
         type: "POST",
-        url: "formProcesso.php",
+        url: "contatoForm.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success: function (text) {
             if (text == "success") {
@@ -34,12 +34,12 @@ function submitForm() {
 }
 
 function formSuccess() {
-    $("#contactForm")[0].reset();
+    $("#contatoForm")[0].reset();
     submitMSG(true, "Mensagem Sucesso!");
 }
 
 function formError() {
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+    $("#contatoForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
 }
@@ -51,5 +51,5 @@ function submitMSG(valid, msg) {
     } else {
         msgClasses = "h3 text-center flash animated text-danger";
     }
-    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    $("#contatoEnvia").removeClass().addClass(msgClasses).text(msg);
 }

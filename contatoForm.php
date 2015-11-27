@@ -8,7 +8,7 @@
             <p><i class="glyphicon glyphicon-envelope"><b> brusque@fisc.com.br</b></i></p>
         </div>
         <div class="col-lg-8">
-            <form role="form" id="contactForm">
+            <form role="form" id="contatoForm">
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="name" class="h4">Nome</label>
@@ -28,7 +28,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Enviar</button>
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div id="contatoEnvia" class="h3 text-center hidden"></div>
             </form>
         </div>
     </div>
