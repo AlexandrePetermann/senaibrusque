@@ -4,6 +4,8 @@ function gerarCodigo() {
     return sha1(mt_rand());
 }
 
+include './confirmacaoNewsletter.php';
+
 require_once './dbConexao.php';
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
@@ -27,15 +29,14 @@ If (isset($_POST['cadastraEmail'])) {
         $p = $conn->prepare($sql);
         $q = $p->execute($parametros);
 
-        /*
-          // Envio de e-mail para confirmação
-          $link = "<a href='HTTP://" . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
-          $link .= "?cod=u&sit=0&email=$email'";
-          $link .= "title='Clique para confirmar seu e-mail'>";
-          $link .= "Clique para confirmar seu e-mail";
-          $link .= "</a>";
-          emailConfirma($email, $link);
-         */
+
+        // Envio de e-mail para confirmação
+        $link = "<a href='HTTP://" . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
+        $link .= "?cod=$cod'";
+        $link .= "title='Clique para confirmar seu e-mail'>";
+        $link .= "Clique para confirmar seu e-mail";
+        $link .= "</a>";
+        emailConfirma($email, $link);
         header("Location: Index.php");
     }
 } else {
