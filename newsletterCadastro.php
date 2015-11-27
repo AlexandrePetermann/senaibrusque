@@ -4,7 +4,7 @@ function gerarCodigo() {
     return sha1(mt_rand());
 }
 
-include './confirmacaoNewsletter.php';
+include './newsletterEmail.php';
 
 require_once './dbConexao.php';
 try {

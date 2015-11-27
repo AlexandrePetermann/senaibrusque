@@ -1,5 +1,5 @@
 <section id="Newsletter">
-    <form role="form" action="cadastroNewsletter.php" method="post">
+    <form role="form" action="newsletterCadastro.php" method="post">
         <div class="form-inline">
             <div class="input-group input-group-sm">                            
                 <span class="input-group-addon">
