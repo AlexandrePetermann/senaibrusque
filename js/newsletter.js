@@ -3,10 +3,9 @@
  * http://webdesign.tutsplus.com/tutorials/building-a-bootstrap-contact-form-using-php-and-ajax--cms-23068
  */
 
-/*
+
  
- 
-$("#contactForm").validator().on("submit", function (event) {
+$("#newsletterForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Por favor preencha os dados de forma correta!");
@@ -19,14 +18,11 @@ $("#contactForm").validator().on("submit", function (event) {
 
 function submitForm() {
     // Inicializa as variáveis com o conteúdo do formulario
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var message = $("#message").val();
-
+    var email = $("#emailNewsletter").val();
     $.ajax({
         type: "POST",
-        url: "formProcesso.php",
-        data: "name=" + name + "&email=" + email + "&message=" + message,
+        url: "newsletterCadastro.php",
+        data: "&email=" + email ,
         success: function (text) {
             if (text == "success") {
                 formSuccess();
@@ -36,12 +32,12 @@ function submitForm() {
 }
 
 function formSuccess() {
-    $("#contactForm")[0].reset();
+    $("#newsletterForm")[0].reset();
     submitMSG(true, "Mensagem Sucesso!");
 }
 
 function formError() {
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+    $("#newsletterForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
 }
@@ -53,7 +49,5 @@ function submitMSG(valid, msg) {
     } else {
         msgClasses = "h3 text-center flash animated text-danger";
     }
-    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    $("#newsletterEnvia").removeClass().addClass(msgClasses).text(msg);
 }
-
-*/

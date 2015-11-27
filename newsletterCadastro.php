@@ -1,5 +1,9 @@
 <?php
 
+$email = $_POST["email"];
+
+echo "entrou";
+
 function gerarCodigo() {
     return sha1(mt_rand());
 }
