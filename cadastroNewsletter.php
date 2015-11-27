@@ -29,7 +29,6 @@ If (isset($_POST['cadastraEmail'])) {
         $p = $conn->prepare($sql);
         $q = $p->execute($parametros);
 
-
         // Envio de e-mail para confirmação
         $link = "<a href='HTTP://" . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
         $link .= "?cod=$cod'";
@@ -39,8 +38,18 @@ If (isset($_POST['cadastraEmail'])) {
         emailConfirma($email, $link);
         header("Location: Index.php");
     }
+} elseif (!empty($_GET['cod'])) {
+    // atualização de dados
+    $cod = filter_input(INPUT_GET, 'cod', FILTER_SANITIZE_STRING);
+    $sql = 'update Newsletter set '
+            . 'dataAtualizacao = Now(), '
+            . 'situacao = 1 '
+            . 'Where codigo = :cod';
+    $p = $conn->prepare($sql);
+    $q = $p->execute(array(':cod' => $cod));
+    header('Location: Index.php');
 } else {
-// botão cadastrar não foi pressionado
+// tentou acessar diretamente está pagina
 // redirecionada para a pagina inicial
     header('Location: Index.php');
 }
