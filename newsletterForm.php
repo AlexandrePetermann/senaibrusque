@@ -5,9 +5,9 @@
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-envelope"></span>
                 </span>
-                <input class="form-control" type="email" placeholder="seunome@provedor.com" id="emailNewsletter" size="50" name="emailNewsletter">
+                <input type="email" class="form-control" id="emailNewsletter" placeholder="seunome@provedor.com" required size="50" >
                 <div class="help-block with-errors"></div>
-            </div>            
+            </div>
             <button type="submit" id="form-submit" class="btn btn-success" name="cadastraEmail">Cadastrar</button>
             <div id="newsletterEnvia" class="h3 text-center hidden"></div>
         </div>

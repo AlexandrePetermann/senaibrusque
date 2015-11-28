@@ -6,16 +6,16 @@
 
 $("#contatoForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
-        formError();
-        submitMSG(false, "Por favor preencha os dados de forma correta!");
+        contatoformError();
+        contatoSubmitMSG(false, "Por favor preencha os dados de forma correta!");
     } else {
         // everything looks good!
         event.preventDefault();
-        submitForm();
+        contatosubmitForm();
     }
 });
 
-function submitForm() {
+function contatosubmitForm() {
     // Inicializa as variáveis com o conteúdo do formulario
     var name = $("#name").val();
     var email = $("#email").val();
@@ -23,28 +23,28 @@ function submitForm() {
 
     $.ajax({
         type: "POST",
-        url: "contatoForm.php",
+        url: "contatoEmail.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success: function (text) {
             if (text == "success") {
-                formSuccess();
+                contatoformSuccess();
             }
         }
     });
 }
 
-function formSuccess() {
+function contatoformSuccess() {
     $("#contatoForm")[0].reset();
-    submitMSG(true, "Mensagem Sucesso!");
+    contatoSubmitMSG(true, "Mensagem Sucesso!");
 }
 
-function formError() {
+function contatoformError() {
     $("#contatoForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
 }
 
-function submitMSG(valid, msg) {
+function contatoSubmitMSG(valid, msg) {
     var msgClasses;
     if (valid) {
         msgClasses = "h3 text-center tada animated text-success";

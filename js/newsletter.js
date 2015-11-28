@@ -7,42 +7,42 @@
  
 $("#newsletterForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
-        formError();
-        submitMSG(false, "Por favor preencha os dados de forma correta!");
+        newsletterformError();
+        newslettersubmitMSG(false, "Por favor preencha os dados de forma correta!");
     } else {
         // everything looks good!
         event.preventDefault();
-        submitForm();
+        newslettersubmitForm();
     }
 });
 
-function submitForm() {
+function newslettersubmitForm() {
     // Inicializa as variáveis com o conteúdo do formulario
     var email = $("#emailNewsletter").val();
     $.ajax({
         type: "POST",
-        url: "newsletterCadastro.php",
+        url: "newsletterEmail.php",
         data: "&email=" + email ,
         success: function (text) {
             if (text == "success") {
-                formSuccess();
+                newsletterformSuccess();
             }
         }
     });
 }
 
-function formSuccess() {
+function newsletterformSuccess() {
     $("#newsletterForm")[0].reset();
-    submitMSG(true, "Mensagem Sucesso!");
+    newslettersubmitMSG(true, "Mensagem Sucesso!");
 }
 
-function formError() {
+function newsletterformError() {
     $("#newsletterForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
 }
 
-function submitMSG(valid, msg) {
+function newslettersubmitMSG(valid, msg) {
     var msgClasses;
     if (valid) {
         msgClasses = "h3 text-center tada animated text-success";
