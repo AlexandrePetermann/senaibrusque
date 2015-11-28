@@ -3,7 +3,7 @@ function emailConfirma($email, $link) {
     // recipients
     $to = 'xandy.bq@gmail.com';
     // subject
-    $subject = 'Confirmaçãp de cadastro Senai - Brusque';
+    $subject = 'Confirmação de cadastro Senai - Brusque';
     // message
     $message = " 
     <html>
@@ -28,5 +28,5 @@ function emailConfirma($email, $link) {
     //$headers .= "Cc: birthdayarchive@example.com"" . "\r\n";
     //$headers .= "Bcc: birthdaycheck@example.com" . "\r\n";
 // Mail it
-    mail($to, $subject, $message, $headers);
+    return mail($to, $subject, $message, $headers);
 }
