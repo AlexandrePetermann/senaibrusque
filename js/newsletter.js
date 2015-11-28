@@ -3,12 +3,11 @@
  * http://webdesign.tutsplus.com/tutorials/building-a-bootstrap-contact-form-using-php-and-ajax--cms-23068
  */
 
-
  
 $("#newsletterForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         newsletterformError();
-        newslettersubmitMSG(false, "Por favor preencha os dados de forma correta!");
+        newslettersubmitMSG(false, "Por favor preencha o E-mail de forma correta!");
     } else {
         // everything looks good!
         event.preventDefault();
@@ -33,7 +32,7 @@ function newslettersubmitForm() {
 
 function newsletterformSuccess() {
     $("#newsletterForm")[0].reset();
-    newslettersubmitMSG(true, "Mensagem Sucesso!");
+    newslettersubmitMSG(true, "E-mail enviado com Sucesso!");
 }
 
 function newsletterformError() {
@@ -45,9 +44,9 @@ function newsletterformError() {
 function newslettersubmitMSG(valid, msg) {
     var msgClasses;
     if (valid) {
-        msgClasses = "h3 text-center tada animated text-success";
+        msgClasses = "h3 text-left shake animated";
     } else {
-        msgClasses = "h3 text-center flash animated text-danger";
+        msgClasses = "h3 text-left flash animated text-danger";
     }
     $("#newsletterEnvia").removeClass().addClass(msgClasses).text(msg);
 }
