@@ -38,6 +38,7 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
         echo "falha";
     }
 } elseif (!empty($_GET['cod'])) {
+// Confirmação de cadastro, feito através de e-mail recebido
 // atualização de dados
     $cod = filter_input(INPUT_GET, 'cod', FILTER_SANITIZE_STRING);
     $sql = 'update Newsletter set '
