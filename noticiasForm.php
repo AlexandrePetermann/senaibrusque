@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <section id="Noticias" class="container-fluid">
     <h1>Notícias</h1>
     <div class="row">
@@ -6,7 +7,7 @@
             Notícia 01
         </div>
         <div class="col-xs-8 col-md-4">
-            <h1>Noticia 02</h1>
+            <?php include './noticiasBusca.php'; ?>            
             <!-- Trigger the modal with a button -->
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ler mais...</button>
             <!-- Modal -->
@@ -19,7 +20,7 @@
                             <h4 class="modal-title">Título da noticia 02</h4>
                         </div>                        
                         <div class="modal-body">
-                            Texto da Noticia 02
+                           
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
