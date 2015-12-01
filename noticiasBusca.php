@@ -10,19 +10,26 @@ try {
 
 //Busca noticia do banco de dados
 // Listagem de dados
-$sql = "select titulo, resumo, noticia from noticias order by datapostagem desc";
+$sql = "select titulo, resumo, noticia from noticias order by datapostagem desc limit 9";
 $q = $conn->query($sql);
 $q->setFetchMode(PDO::FETCH_ASSOC);
 
+$count = 0;
+$String = "<div class='row'>";
+
 while ($r = $q->fetch()) {
-    $String = " 
-    <div class='row'>
-        <div class='col-xs-8 col-md-4'>            
+    $count ++;
+    if (($count % 3) == 0) {
+        $String.= "</div>";
+        $String.="<div class='row'>";
+    }
+    $String.= "     
+        <div class='col-xs-8 col-md-3'>        
             <h1>" . $r['titulo'] . "</h1>
             <h2>" . $r['resumo'] . "</h2>
-            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Ler mais...</button>
+            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal" . $count . "'>Ler mais...</button>
             <!-- Modal -->
-            <div class='modal fade' id='myModal' role='dialog'>
+            <div class='modal fade' id='myModal" . $count . "' role='dialog'>
                 <div class='modal-dialog'>
                     <div class='modal-content'>
                         <div class='modal-header'>
@@ -38,8 +45,8 @@ while ($r = $q->fetch()) {
                     </div>
                 </div>
             </div>
-        </div>        
-    </div>
+        </div>
 ";
-    echo $String;
-}
+};
+$String.= "</div>";
+echo $String;
