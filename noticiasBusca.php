@@ -18,11 +18,12 @@ $count = 0;
 $String = "<div class='row'>";
 
 while ($r = $q->fetch()) {
-    $count ++;
+
     if (($count % 3) == 0) {
         $String.= "</div>";
         $String.="<div class='row'>";
     }
+    $count ++;
     $String.= "     
         <div class='col-xs-8 col-md-3'>        
             <h1>" . $r['titulo'] . "</h1>
