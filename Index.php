@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/estiloso.css"/>
         <link rel="stylesheet" href="css/animate.css"
-
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <header class="jumbotron" id="topo" >
@@ -52,7 +51,7 @@
             </div>
         </nav>
 
-        <div id="Inicio" class="container-fluid">
+        <section id="Inicio" class="container-fluid">
             <h1>Inicio</h1>
             <!--Carrosel de Imagens-->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -93,18 +92,16 @@
                     <span class="sr-only">Próxima</span>
                 </a>
             </div>
-        </div>
-        <div id="Cursos" class="container-fluid">
+        </section>
+        <section id="Cursos" class="container-fluid">
             <h1>Cursos</h1>
             <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
             <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        </div>
-        <div id="Noticias" class="container-fluid">
-            <h1>Notícias</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        </div>
-        <div id="Fotos" class="container-fluid">
+        </section>
+
+        <?php include './noticiasForm.php'; ?>
+
+        <section id="Fotos" class="container-fluid">
             <h1>Fotos</h1>
             <div class="row">
                 <div class="col-xs-6 col-md-3">
@@ -169,16 +166,16 @@
                     </li> 
                 </ul> 
             </nav>
-        </div>
-        <div id="Videos" class="container-fluid text-center">
+        </section>
+        <section id="Videos" class="container-fluid text-center">
             <h1>Videos</h1>
             <iframe width="90%" height="80%" src="https://www.youtube.com/embed/videoseries?list=PLVpmN2T0ZVYXObtTizne3LU1hKKBgE5_U" frameborder="0" allowfullscreen></iframe>
-        </div>
+        </section>
         <?php include './contatoForm.php'; ?>
-        <div id="Localizacao" class="container-fluid text-center">
+        <section id="Localizacao" class="container-fluid text-center">
             <h1>Localização </h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28411.02199277725!2d-48.9140747472448!3d-27.112909543324925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0b0ebeaaf853b447!2sSENAI+-+Servi%C3%A7o+Nacional+de+Aprendizagem+Industrial!5e0!3m2!1spt-BR!2sbr!4v1447717805526" width="90%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        </section>
 
         <!-- Javascript -->
         <script src="js/jquery-1.11.3.min.js" ></script>
