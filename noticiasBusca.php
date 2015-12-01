@@ -28,7 +28,7 @@ while ($r = $q->fetch()) {
         <div class='col-xs-8 col-md-4'>        
             <h1>" . utf8_encode($r['titulo']) . "</h1>
             <h2>" . utf8_encode($r['resumo']) . "</h2>
-            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal" . $count . "'>Ler mais...</button>
+            <button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal" . $count . "'>Ler mais...</button>
             <!-- Modal -->
             <div class='modal fade' id='myModal" . $count . "' role='dialog'>
                 <div class='modal-dialog'>
@@ -38,7 +38,7 @@ while ($r = $q->fetch()) {
                             <h4 class='modal-title'>" . utf8_encode($r['titulo']) . "</h4>
                         </div>                        
                         <div class='modal-body'>
-                           <h1>" . utf8_encode($r['noticia']) . "</h1>
+                           <h5>" . utf8_encode($r['noticia']) . "</h5>
                         </div>
                         <div class='modal-footer'>
                             <button type='button' class='btn btn-default' data-dismiss='modal'>Sair</button>
