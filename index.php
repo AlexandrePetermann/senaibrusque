@@ -178,11 +178,11 @@
         </section>
 
         <!-- Javascript -->
-        <script src="js/jquery-1.11.3.min.js" ></script>
-        <script src="js/bootstrap.min.js" ></script>
-        <script src="js/validator.js"></script>
-        <script src="js/meuscript.js"></script>
-        <script src="js/contato.js"></script>
-        <script src="js/newsletter.js"></script>        
+        <script src="./js/jquery-1.11.3.min.js" ></script>
+        <script src="./js/bootstrap.min.js" ></script>
+        <script src="./js/validator.js"></script>
+        <script src="./js/meuscript.js"></script>
+        <script src="./js/contato.js"></script>
+        <script src="./js/newsletter.js"></script>        
     </body>
 </html>

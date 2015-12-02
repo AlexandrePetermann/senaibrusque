@@ -4,9 +4,8 @@ function gerarCodigo() {
     return sha1(mt_rand());
 }
 
-include './newsletter/newsletterEmail.php';
-
-require_once './bancoDados/dbConexao.php';
+require_once './newsletterEmail.php';
+require_once '../bancoDados/dbConexao.php';
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 } catch (PDOException $pe) {

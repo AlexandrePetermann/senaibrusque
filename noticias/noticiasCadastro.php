@@ -15,7 +15,7 @@ If (isset($_POST['btn'])) {
     if (isset($_POST['titulo']) && !empty($_POST['titulo']) && isset($_POST['resumo']) && !empty($_POST['resumo']) && isset($_POST['noticia']) && !empty($_POST['noticia'])) {
 // Filtragem de entrada de dados
         $titulo = filter_input(INPUT_POST, 'titulo', FILTER_SANITIZE_STRING);
-        $resumo = filter_input(INPUT_POST, 'resumo', FILTER_SANITIZE_STRING);
+        $resumo = $_POST['resumo'];
         $noticia = filter_input(INPUT_POST, 'noticia', FILTER_SANITIZE_STRING);
 
 // String SQL

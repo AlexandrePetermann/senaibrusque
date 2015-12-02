@@ -20,9 +20,9 @@ function newslettersubmitForm() {
     var email = $("#emailNewsletter").val();
     $.ajax({
         type: "POST",
-        url: "newsletterCadastro.php",
+        url: "./newsletter/newsletterCadastro.php",
         data: "&email=" + email ,
-        success: function (text) {
+        success: function (text) {        
             if (text == "success") {
                 newsletterformSuccess();
             }
