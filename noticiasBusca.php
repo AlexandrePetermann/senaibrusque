@@ -14,7 +14,7 @@ $sql = "select titulo, resumo, noticia from noticias order by datapostagem desc 
 $q = $conn->query($sql);
 
 // Faz somente quando há registros na tabela
-if ($q->num_rows > 0) {
+//if ($q->num_rows > 0) {
     $q->setFetchMode(PDO::FETCH_ASSOC);
     $count = 0;
     $String = "<div class='row'>";
@@ -51,4 +51,4 @@ if ($q->num_rows > 0) {
     };
     $String.= "</div>";
     echo $String;
-}
+//}
