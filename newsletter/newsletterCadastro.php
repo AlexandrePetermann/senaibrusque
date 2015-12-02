@@ -4,9 +4,9 @@ function gerarCodigo() {
     return sha1(mt_rand());
 }
 
-include './newsletterEmail.php';
+include './newsletter/newsletterEmail.php';
 
-require_once './dbConexao.php';
+require_once './bancoDados/dbConexao.php';
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 } catch (PDOException $pe) {
@@ -47,5 +47,5 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
             . 'Where codigo = :cod';
     $p = $conn->prepare($sql);
     $q = $p->execute(array(':cod' => $cod));
-    header('Location: Index.php');
+    header('Location: ../index.php');
 }

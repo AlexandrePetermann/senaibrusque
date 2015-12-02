@@ -1,6 +1,6 @@
 <?php
 
-require_once './dbConexao.php';
+require_once './bancoDados/dbConexao.php';
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 } catch (PDOException $pe) {
@@ -32,5 +32,5 @@ If (isset($_POST['btn'])) {
 } else {
 // botão cadastrar não foi pressionado
 // redirecionada para a pagina inicial
-    header('Location: Index.php');
+    header('Location: ../index.php');
 }

@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cadastro de Notícias</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/estiloso.css"/>
-        <link rel="stylesheet" href="css/animate.css"
+        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../css/estiloso.css"/>
+        <link rel="stylesheet" href="../css/animate.css"
     </head>
     <body>
         <section id="Contato" class="container-fluid">
             <h1 class="text-center">Cadastro de Notícias</h1>
-            <form action="noticiasCadastro.php" method="post">
+            <form action="./noticias/noticiasCadastro.php" method="post">
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="name" class="h4">Título</label>
