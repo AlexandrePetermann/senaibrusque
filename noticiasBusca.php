@@ -12,19 +12,19 @@ try {
 // Listagem de dados
 $sql = "select titulo, resumo, noticia from noticias order by datapostagem desc limit 9";
 $q = $conn->query($sql);
-$q->setFetchMode(PDO::FETCH_ASSOC);
 
-$count = 0;
-$String = "<div class='row'>";
-
-while ($r = $q->fetch()) {
-
-    if (($count % 3) == 0) {
-        $String.= "</div>";
-        $String.="<div class='row'>";
-    }
-    $count ++;
-    $String.= "     
+// Faz somente quando há registros na tabela
+if ($q->num_rows > 0) {
+    $q->setFetchMode(PDO::FETCH_ASSOC);
+    $count = 0;
+    $String = "<div class='row'>";
+    while ($r = $q->fetch()) {
+        if (($count % 3) == 0) {
+            $String.= "</div>";
+            $String.="<div class='row'>";
+        }
+        $count ++;
+        $String.= "     
         <div class='col-xs-8 col-md-4'>        
             <h1>" . utf8_encode($r['titulo']) . "</h1>
             <h2>" . utf8_encode($r['resumo']) . "</h2>
@@ -48,6 +48,7 @@ while ($r = $q->fetch()) {
             </div>
         </div>
 ";
-};
-$String.= "</div>";
-echo $String;
+    };
+    $String.= "</div>";
+    echo $String;
+}
