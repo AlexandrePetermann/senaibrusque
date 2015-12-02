@@ -5,7 +5,7 @@
 
  
 $("#newsletterForm").validator().on("submit", function (event) {
-    if (event.isDefaultPrevented()) {
+    if (event.isDefaultPrevented()) {        
         newsletterformError();
         newslettersubmitMSG(false, "Por favor preencha o E-mail de forma correta!");
     } else {

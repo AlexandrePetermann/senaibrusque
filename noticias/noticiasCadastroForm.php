@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Adiciona o Ckeditor, editor HTML -->
+        <script type="text/javascript">
+            window.onload = function () {
+                CKEDITOR.replace('noticia');
+            };
+        </script> 
         <title>Cadastro de Notícias</title>
     </head>
     <body>
@@ -21,10 +27,11 @@
                 </div>
                 <div>
                     <label>Notícia</label>
-                    <textarea name="noticia" rows="7" placeholder="Informe a Notícia" required></textarea>                    
+                    <textarea id="noticia" name="noticia" rows="7" placeholder="Informe a Notícia" required></textarea>                    
                 </div>
                 <button type="submit" name="btn">Enviar</button>
             </form>
         </section>
+        <script src="//cdn.ckeditor.com/4.5.5/full/ckeditor.js"></script>
     </body>
 </html>

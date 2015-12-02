@@ -23,7 +23,7 @@ function contatosubmitForm() {
 
     $.ajax({
         type: "POST",
-        url: "contatoEmail.php",
+        url: "./contato/contatoEmail.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success: function (text) {
             if (text == "success") {
@@ -39,6 +39,7 @@ function contatoformSuccess() {
 }
 
 function contatoformError() {
+    
     $("#contatoForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
