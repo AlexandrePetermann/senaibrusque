@@ -14,9 +14,9 @@ If (isset($_POST['btn'])) {
 // Verifica se foi preenchido os dados
     if (isset($_POST['titulo']) && !empty($_POST['titulo']) && isset($_POST['resumo']) && !empty($_POST['resumo']) && isset($_POST['noticia']) && !empty($_POST['noticia'])) {
 // Filtragem de entrada de dados
-        $titulo = filter_input(INPUT_POST, 'titulo', FILTER_SANITIZE_SPECIAL_CHARS);
-        $resumo = filter_input(INPUT_POST, 'resumo', FILTER_SANITIZE_SPECIAL_CHARS);
-        $noticia = filter_input(INPUT_POST, 'noticia', FILTER_SANITIZE_SPECIAL_CHARS);
+        $titulo = filter_input(INPUT_POST, 'titulo', FILTER_SANITIZE_STRING);
+        $resumo = filter_input(INPUT_POST, 'resumo', FILTER_SANITIZE_STRING);
+        $noticia = filter_input(INPUT_POST, 'noticia', FILTER_SANITIZE_STRING);
 
 // String SQL
         $sql = "Insert Into noticias (datapostagem, titulo, resumo, noticia) values(now(),:titulo, :resumo, :noticia)";
